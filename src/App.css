@@ -28,6 +28,201 @@
   color: #61dafb;
 }
 
+.mainCard .topBar{
+  display: flex;
+  padding: 40px 30px;
+}
+
+.mainCard .topBar .title{
+  flex-grow: 1;
+  text-align: left;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.mainCard .topBar .title img{
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.mainCard .topBar .btn button{
+  background-color: black;
+  text-transform: none;
+}
+
+.mainCard .topBar .btn button.disabled{
+  background-color: rgb(145, 141, 141);
+  color: rgb(238, 235, 235);  
+}
+
+.mainCard .topBar .btn img{
+  width: 15px;
+  height: 15px;
+}
+
+.mainCard thead{
+  border-bottom: 1px solid black;
+}
+
+.mainCard thead th{
+  font-weight: bold;
+  font-size: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.mainCard .dataTable{
+  display: inline-block;
+  width: calc(100% - 150px);
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.mainCard .dataTable::-webkit-scrollbar {
+  display: none;
+}
+
+.mainCard .btnTable{
+  display: inline-block;
+  width: 150px;
+}
+
+.mainCard table tr:nth-child(2n){
+  background-color: #e5e9e9;
+}
+
+.mainCard table tr.new{
+  outline: 1px solid green;    
+  border: 1px solid green;
+}
+
+.mainCard table td.edit{
+  background-color: #70db84;
+  cursor: pointer;
+  text-align: center;
+}
+
+.mainCard table td.delete{
+  text-align: center;
+  background-color: #e27a79;
+  cursor: pointer;
+}
+
+.mainCard table td img{
+  height: 0.875rem;
+  width: 0.875rem;
+}
+
+
+.rightDrawer .topBar{
+  display: flex;
+  padding: 15px 30px;
+  align-items: center;
+  background-color: rgba(112, 219, 132, .1);
+}
+
+.rightDrawer .topBar .title{
+  flex-grow: 1;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.rightDrawer .topBar .title img{
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.rightDrawer .topBar .btn img{
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.rightDrawer .form{
+  padding: 30px;
+}
+
+.rightDrawer .form .MuiInputBase-root{
+  width: 100%;
+}
+
+.rightDrawer .form .MuiInputBase-root input{
+  padding: 10px;
+}
+
+.rightDrawer .form .MuiInputBase-root .MuiSelect-select{
+  padding: 10px;
+}
+
+.rightDrawer .form .label{
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.rightDrawer .form .btns{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.rightDrawer .form .btns img{
+  width: 14px;
+  height: 14px;
+}
+
+.rightDrawer .form .btns .MuiButton-contained{
+  color: #fff;
+  font-weight: bold;
+  background-color: #f8c238;
+  text-transform: none;
+}
+
+.rightDrawer .form .btns .MuiButton-outlined{
+  color: #f8c238;
+  text-transform: none;
+  border-color: #f8c238;
+  font-weight: bold;
+}
+
+
+.bottomDrawer .topBar{
+  display: flex;
+  padding: 15px 30px;
+  align-items: center;
+  background-color: rgba(112, 219, 132, .1);
+}
+
+.bottomDrawer .topBar .title{
+  flex-grow: 1;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.bottomDrawer .topBar .title img{
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.bottomDrawer .topBar .btn img{
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.bottomDrawer .btns{
+  margin: 30px;
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottomDrawer .btns button{
+  text-transform: none;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +230,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+@media screen and (max-width: 900px) {
+  .mainCard .topBar{
+    padding: 40px 15px;
+  }
+  .mainCard .dataTable{
+    width: calc(100% - 100px);
+  }
+  .mainCard .btnTable{
+    display: inline-block;
+    width: 100px;
+  }
+  
 }
